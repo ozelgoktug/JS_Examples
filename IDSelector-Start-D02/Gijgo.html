@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Getting Started with jQuery Grid</title>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <table id="grid"></table>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var grid = $('#grid').grid({
+              dataSource:   '{"records":[{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":1,"Name":"Hristo Stoichkov","PlaceOfBirth":null,"DateOfBirth":"\/Date(-122407200000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":1},{"ID":2,"Name":"Ronaldo Luís Nazário de Lima","PlaceOfBirth":"Rio de Janeiro, Brazil","DateOfBirth":"\/Date(211870800000)\/","CountryID":12,"CountryName":"Brazil","IsActive":false,"OrderNumber":2},{"ID":3,"Name":"David Platt","PlaceOfBirth":"Chadderton, United Kingdom","DateOfBirth":"\/Date(-112129200000)\/","CountryID":16,"CountryName":"England","IsActive":false,"OrderNumber":3},{"ID":4,"Name":"Manuel Neuer","PlaceOfBirth":"Gelsenkirchen, West Germany","DateOfBirth":"\/Date(512287200000)\/","CountryID":17,"CountryName":"Germany","IsActive":true,"OrderNumber":4},{"ID":5,"Name":"James Rodríguez","PlaceOfBirth":"Cúcuta, Colombia","DateOfBirth":"\/Date(679294800000)\/","CountryID":14,"CountryName":"Colombia","IsActive":true,"OrderNumber":5},{"ID":6,"Name":"Dimitar Berbatov","PlaceOfBirth":"Blagoevgrad, Bulgaria","DateOfBirth":"\/Date(349682400000)\/","CountryID":18,"CountryName":"Bulgaria","IsActive":false,"OrderNumber":6},{"ID":7,"Name":"Robert Lewandowski","PlaceOfBirth":"Warsaw, Poland","DateOfBirth":"\/Date(588142800000)\/","CountryID":19,"CountryName":"Poland","IsActive":true,"OrderNumber":7}],"total":7}',
+                columns: [
+                    { field: 'ID', width: 56 },
+                    { field: 'Name', sortable: true },
+                    { field: 'PlaceOfBirth', title: 'Place Of Birth', sortable: true },
+                    { field: 'DateOfBirth', title: 'Date Of Birth', type: 'date', width: 150 }
+                ],
+                pager: { limit: 5 }
+            });
+        });
+
+    </script>
+</body>
+</html>

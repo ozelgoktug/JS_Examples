@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Child Selectors (Seçiciler)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <table class="table" id="table1">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Adı</th>
+                <th scope="col">Soyadı</th>
+                <th scope="col">E-Posta Adresi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Alper</td>
+                <td>Tunga</td>
+                <td>alper@altu.dev</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Timuçin</td>
+                <td>Sevil</td>
+                <td>timucinsevil@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Asuman</td>
+                <td>Gülizar</td>
+                <td>asumangulizar@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Yalçın</td>
+                <td>Baha</td>
+                <td>yalcinbaha@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table" id="table2">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Adı</th>
+                <th scope="col">Soyadı</th>
+                <th scope="col">E-Posta Adresi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Alper</td>
+                <td>Tunga</td>
+                <td>alper@altu.dev</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Timuçin</td>
+                <td>Sevil</td>
+                <td>timucinsevil@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Asuman</td>
+                <td>Gülizar</td>
+                <td>asumangulizar@gmail.com</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Yalçın</td>
+                <td>Baha</td>
+                <td>yalcinbaha@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="col-md-12">
+            <select id="backgroundColorSelector" class="form-control">
+              <option value="null" disabled selected>
+                Lütfen bir arkaplan rengi seçiniz...
+              </option>
+              <option value="black">Siyah</option>
+              <option value="gray">Gri</option>
+              <option value="white">Beyaz</option>
+              <option value="blueviolet">Mavi Menekşe</option>
+            </select>
+            <select id="textColorSelector" class="form-control mt-1">
+              <option value="null" disabled selected>
+                Lütfen bir yazı rengi seçiniz...
+              </option>
+              <option value="black">Siyah</option>
+              <option value="gray">Gri</option>
+              <option value="white">Beyaz</option>
+              <option value="blueviolet">Mavi Menekşe</option>
+              <option value="orange">Turuncu</option>
+              <option value="red">Kırmızı</option>
+              <option value="blue">Mavi</option>
+            </select>
+            <select id="tableRowTypeSelector" class="form-control mt-1">
+              <option value="null" disabled selected>
+                Lütfen bir kolon türünü seçiniz...
+              </option>
+              <option value="odd">Tek</option>
+              <option value="even">Çift</option>
+            </select>
+            <select id="tableSelector" class="form-control mt-1">
+              <option value="null" disabled selected>
+                Lütfen bir tablo seçiniz...
+              </option>
+              <option value="table1">İlk Tablo</option>
+              <option value="table2">İkinci Tablo</option>
+            </select>
+            <button class="btn btn-primary mt-1">Renklendir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./jquery-3.5.1.js" type="application/javascript"></script>
+    <script src="./js/bootstrap.js" type="application/javascript"></script>
+    <script src="./ChildSelector.js" type="application/javascript"></script>
+  </body>
+</html>
